@@ -1,9 +1,9 @@
-# BallGamesWinFormsApp
 
-*Work with graphics, animation.
-The base project, which contains the basic functionality of basic graphics and animation, which can then be used in different types of applications.
+<h1 align="center">BallGamesWinFormsApp</h1>
 
-The goal is to practice the topics of Inheritance and Polymorphism.
+<h2 align="center">Hi there, this project is the base project, which contains functionality of <i>basic graphics and animation</i>, which can then be used in different types of applications</h2>
+<h3 align="center">The goal is to practice the topics of Inheritance and Polymorphism.</h3>
+
 _______________________________________________________________________
 Project 1 "BallGamesWinForms" implemented game logic:
 
