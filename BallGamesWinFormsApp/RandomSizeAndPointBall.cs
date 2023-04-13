@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace BallGamesWinFormsApp
 {
-    public class PointBall:Ball
-
+    public class RandomSizeAndPointBall : RandomPointBall
     {
-        public PointBall(MainForm form, int x, int y):base(form)
+        public RandomSizeAndPointBall(MainForm form) : base(form)
         {
-            this.x = x;
-            this.y = y;
+            size = random.Next(20,70);
         }
     }
 }

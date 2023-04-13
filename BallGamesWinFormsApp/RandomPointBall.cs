@@ -10,11 +10,11 @@ namespace BallGamesWinFormsApp
     
     public class RandomPointBall:Ball
     {
-        static Random random = new Random();
+        protected static Random random = new Random();
         public RandomPointBall(MainForm form):base(form)
         {
-            var x = random.Next(0, form.ClientSize.Width);
-            var y = random.Next(0, form.ClientSize.Height); 
+            x = random.Next(0, form.ClientSize.Width);
+            y = random.Next(0, form.ClientSize.Height); 
         }
     }
 }

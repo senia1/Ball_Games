@@ -15,12 +15,15 @@ namespace BallGamesWinFormsApp
         private void manyBallsButton_Click(object sender, EventArgs e)
         {
             //var ball = new Ball(this);
-            var randomPointBall = new RandomPointBall(this);
+            var randomSizeAndPointBall = new RandomSizeAndPointBall(this);
+            //ball.Show();
+            randomSizeAndPointBall.Show();
         }
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
             var pointBall = new PointBall(this,e.X,e.Y);
+            pointBall.Show();
         }
     }
 }
