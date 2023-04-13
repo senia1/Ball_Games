@@ -5,7 +5,11 @@
 <h3 align="center">The goal is to practice the topics of Inheritance and Polymorphism.</h3>
 
 _______________________________________________________________________
-Project 1 "BallGamesWinForms" implemented game logic:
+Project №1 "BallGamesWinForms" implemented game logic:
 
 There is a Start button, which has the form of many balls of different shapes and colors, moving in different attachments.
 There is a Stop button that stops all created balloons. After stopping the balls, the use of balls is issued, which are completely stored in a given amount.
+
+Project #2 "CatchBallsGame" implemented game logic:
+
+By pressing the Start button, the movement of the balls starts, the user must catch the balls with the mouse, if the ball is caught, it stops. Balls caught are counted. At the end of the game, you need to use the Clear the field button.
