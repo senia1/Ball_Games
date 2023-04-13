@@ -12,7 +12,7 @@ namespace BallGamesWinFormsApp
         {
             var graphics = form.CreateGraphics();
             var brush = Brushes.Aqua;
-            var rectangle = new Rectangle(450, 150, 100, 100);
+            var rectangle = new Rectangle(450, 150, 70, 70);
             graphics.FillEllipse(brush, rectangle);
         } 
     }
