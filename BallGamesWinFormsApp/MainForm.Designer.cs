@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             manyBallsButton = new Button();
+            stopBallButton = new Button();
+            clearFormButton = new Button();
             SuspendLayout();
             // 
             // manyBallsButton
@@ -42,11 +44,31 @@
             manyBallsButton.UseVisualStyleBackColor = true;
             manyBallsButton.Click += manyBallsButton_Click;
             // 
+            // stopBallButton
+            // 
+            stopBallButton.Location = new Point(659, 349);
+            stopBallButton.Name = "stopBallButton";
+            stopBallButton.Size = new Size(112, 34);
+            stopBallButton.TabIndex = 1;
+            stopBallButton.Text = "Stop";
+            stopBallButton.UseVisualStyleBackColor = true;
+            // 
+            // clearFormButton
+            // 
+            clearFormButton.Location = new Point(659, 389);
+            clearFormButton.Name = "clearFormButton";
+            clearFormButton.Size = new Size(112, 34);
+            clearFormButton.TabIndex = 2;
+            clearFormButton.Text = " Clean";
+            clearFormButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(clearFormButton);
+            Controls.Add(stopBallButton);
             Controls.Add(manyBallsButton);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
@@ -59,5 +81,7 @@
         #endregion
 
         private Button manyBallsButton;
+        private Button stopBallButton;
+        private Button clearFormButton;
     }
 }
