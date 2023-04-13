@@ -1,20 +1,20 @@
 ﻿
-namespace BallGamesWinFormsApp
+namespace Balls.Common
 {
     public class Ball
     {
-        private MainForm form;
+        private Form form;
         protected int vx = 1;
         protected int vy = 1;
         protected int x = 150;
         protected int y = 150;
         protected int size = 70;
-        public Ball(MainForm form)
+        public Ball(Form form)
         {
             this.form = form;
         }
 
-        public void Show() 
+        public void Show()
         {
             var graphics = form.CreateGraphics();
             var brush = Brushes.Aqua;
@@ -22,13 +22,13 @@ namespace BallGamesWinFormsApp
             graphics.FillEllipse(brush, rectangle);
         }
 
-        private void Go() 
+        private void Go()
         {
             x += vx;
             y += vy;
         }
 
-        private void Clear() 
+        private void Clear()
         {
             var graphics = form.CreateGraphics();
             var brush = Brushes.White;
@@ -36,7 +36,7 @@ namespace BallGamesWinFormsApp
             graphics.FillEllipse(brush, rectangle);
         }
 
-        public void Move() 
+        public void Move()
         {
             Clear();
             Go();
