@@ -1,5 +1,5 @@
 
-<h1 align="center">BallGamesWinFormsApp</h1>
+<h1 align="center">BallGames</h1>
 
 <h2 align="center">Hi there, this project is the base project, which contains functionality of <i>basic graphics and animation</i>, which can then be used in different types of applications</h2>
 <h3 align="center">The goal is to practice the topics of Inheritance and Polymorphism.</h3>
