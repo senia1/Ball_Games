@@ -52,6 +52,7 @@
             stopBallButton.TabIndex = 1;
             stopBallButton.Text = "Stop";
             stopBallButton.UseVisualStyleBackColor = true;
+            stopBallButton.Click += stopBallButton_Click;
             // 
             // clearFormButton
             // 

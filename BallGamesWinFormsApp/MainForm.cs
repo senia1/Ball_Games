@@ -2,6 +2,7 @@ namespace BallGamesWinFormsApp
 {
     public partial class MainForm : Form
     {
+        RandomSizeAndPointBall randomSizeAndPointball;
         public MainForm()
         {
             InitializeComponent();
@@ -15,15 +16,23 @@ namespace BallGamesWinFormsApp
         private void manyBallsButton_Click(object sender, EventArgs e)
         {
             //var ball = new Ball(this);
-            var randomSizeAndPointBall = new RandomSizeAndPointBall(this);
-            //ball.Show();
-            randomSizeAndPointBall.Show();
+            randomSizeAndPointball = new RandomSizeAndPointBall(this);
+            randomSizeAndPointball.Show();
+            //randomSizeAndPointBall.Show();
+
         }
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
-            var pointBall = new PointBall(this,e.X,e.Y);
+            var pointBall = new PointBall(this, e.X, e.Y);
             pointBall.Show();
+        }
+
+        private void stopBallButton_Click(object sender, EventArgs e)
+        {
+            randomSizeAndPointball.Clear();
+            randomSizeAndPointball.Go();
+            randomSizeAndPointball.Show();
         }
     }
 }
