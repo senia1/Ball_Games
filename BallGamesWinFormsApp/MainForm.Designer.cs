@@ -28,22 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.SuspendLayout();
+            manyBallsButton = new Button();
+            stopBallButton = new Button();
+            clearFormButton = new Button();
+            timer = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
+            // 
+            // manyBallsButton
+            // 
+            manyBallsButton.Location = new Point(659, 309);
+            manyBallsButton.Name = "manyBallsButton";
+            manyBallsButton.Size = new Size(112, 34);
+            manyBallsButton.TabIndex = 0;
+            manyBallsButton.Text = "Start";
+            manyBallsButton.UseVisualStyleBackColor = true;
+            manyBallsButton.Click += manyBallsButton_Click;
+            // 
+            // stopBallButton
+            // 
+            stopBallButton.Location = new Point(659, 349);
+            stopBallButton.Name = "stopBallButton";
+            stopBallButton.Size = new Size(112, 34);
+            stopBallButton.TabIndex = 1;
+            stopBallButton.Text = "Stop";
+            stopBallButton.UseVisualStyleBackColor = true;
+            stopBallButton.Click += stopBallButton_Click;
+            // 
+            // clearFormButton
+            // 
+            clearFormButton.Location = new Point(659, 389);
+            clearFormButton.Name = "clearFormButton";
+            clearFormButton.Size = new Size(112, 34);
+            clearFormButton.TabIndex = 2;
+            clearFormButton.Text = " Clean";
+            clearFormButton.UseVisualStyleBackColor = true;
+            clearFormButton.Click += clearFormButton_Click_1;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Balls";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(clearFormButton);
+            Controls.Add(stopBallButton);
+            Controls.Add(manyBallsButton);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Balls";
+            Load += MainForm_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button manyBallsButton;
+        private Button stopBallButton;
+        private Button clearFormButton;
+        private System.Windows.Forms.Timer timer;
     }
 }
