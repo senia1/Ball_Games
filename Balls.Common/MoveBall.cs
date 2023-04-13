@@ -3,27 +3,22 @@ namespace Balls.Common
 {
     public class MoveBall : RandomPointBall
     {
-        private System.Windows.Forms.Timer timer;
         public MoveBall(Form form) : base(form)
         {
-            timer = new System.Windows.Forms.Timer();
-            timer.Interval = 20;
-            timer.Tick += Timer_Tick;
+            vx = GenerateRandomProjection();
+            vy = GenerateRandomProjection();
         }
 
-        private void Timer_Tick(object? sender, EventArgs e)
+        private int GenerateRandomProjection()
         {
-            Move();
-        }
+            var randomDouble = random.NextDouble();
+            var sign = 1;
+            if (randomDouble < 0.5)
+            {
+                sign = -1;
+            }
 
-        public void Start()
-        {
-            timer.Start();
-        }
-
-        public void Stop()
-        {
-            timer.Stop();
+            return random.Next(2, 5) * sign;
         }
     }
 }

@@ -64,6 +64,7 @@
             clearFormButton.TabIndex = 2;
             clearFormButton.Text = " Clean";
             clearFormButton.UseVisualStyleBackColor = true;
+            clearFormButton.Click += clearFormButton_Click_1;
             // 
             // MainForm
             // 
@@ -73,12 +74,13 @@
             Controls.Add(clearFormButton);
             Controls.Add(stopBallButton);
             Controls.Add(manyBallsButton);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Balls";
             Load += MainForm_Load;
-            MouseDown += MainForm_MouseDown;
             ResumeLayout(false);
         }
 

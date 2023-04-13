@@ -5,7 +5,7 @@ namespace Balls.Common
     {
         public RandomSizeAndPointBall(Form form) : base(form)
         {
-            size = random.Next(20, 70);
+            radius = random.Next(10, 40);
         }
     }
 }
