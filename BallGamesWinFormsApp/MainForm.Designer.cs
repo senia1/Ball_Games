@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             manyBallsButton = new Button();
             stopBallButton = new Button();
             clearFormButton = new Button();
+            timer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // manyBallsButton
@@ -63,6 +65,10 @@
             clearFormButton.Text = " Clean";
             clearFormButton.UseVisualStyleBackColor = true;
             // 
+            // timer
+            // 
+            timer.Tick += timer_Tick;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -85,5 +91,6 @@
         private Button manyBallsButton;
         private Button stopBallButton;
         private Button clearFormButton;
+        private System.Windows.Forms.Timer timer;
     }
 }

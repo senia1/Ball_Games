@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace BallGamesWinFormsApp
 {
     public class Ball
     {
         private MainForm form;
+        protected int vx = 1;
+        protected int vy = 1;
         protected int x = 150;
         protected int y = 150;
         protected int size = 70;
@@ -27,18 +22,25 @@ namespace BallGamesWinFormsApp
             graphics.FillEllipse(brush, rectangle);
         }
 
-        public void Go() 
+        private void Go() 
         {
-            x += 10;
-            y += 10;
+            x += vx;
+            y += vy;
         }
 
-        public void Clear() 
+        private void Clear() 
         {
             var graphics = form.CreateGraphics();
             var brush = Brushes.White;
             var rectangle = new Rectangle(x, y, size, size);
             graphics.FillEllipse(brush, rectangle);
+        }
+
+        public void Move() 
+        {
+            Clear();
+            Go();
+            Show();
         }
     }
 }
