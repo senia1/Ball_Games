@@ -29,21 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.SuspendLayout();
+            manyBallsButton = new Button();
+            SuspendLayout();
+            // 
+            // manyBallsButton
+            // 
+            manyBallsButton.Location = new Point(659, 309);
+            manyBallsButton.Name = "manyBallsButton";
+            manyBallsButton.Size = new Size(112, 34);
+            manyBallsButton.TabIndex = 0;
+            manyBallsButton.Text = "Start";
+            manyBallsButton.UseVisualStyleBackColor = true;
+            manyBallsButton.Click += manyBallsButton_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Balls";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(manyBallsButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Balls";
+            Load += MainForm_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button manyBallsButton;
     }
 }
