@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BallGamesWinFormsApp", "Bal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balls.Common", "Balls.Common\Balls.Common.csproj", "{46AF6BF6-963B-4462-AE2F-36DA9C9C27FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchBallsGame", "CatchBallsGame\CatchBallsGame.csproj", "{32CBF001-85DE-470B-8150-AD693E2ACF9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{46AF6BF6-963B-4462-AE2F-36DA9C9C27FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46AF6BF6-963B-4462-AE2F-36DA9C9C27FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46AF6BF6-963B-4462-AE2F-36DA9C9C27FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CBF001-85DE-470B-8150-AD693E2ACF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CBF001-85DE-470B-8150-AD693E2ACF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CBF001-85DE-470B-8150-AD693E2ACF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CBF001-85DE-470B-8150-AD693E2ACF9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
