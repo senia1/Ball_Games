@@ -3,6 +3,7 @@ namespace BallGamesWinFormsApp
     public partial class MainForm : Form
     {
         RandomSizeAndPointBall randomSizeAndPointball;
+        PointBall pointBall;
         public MainForm()
         {
             InitializeComponent();
@@ -10,7 +11,7 @@ namespace BallGamesWinFormsApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void manyBallsButton_Click(object sender, EventArgs e)
