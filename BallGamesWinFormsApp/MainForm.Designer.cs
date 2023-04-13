@@ -65,10 +65,6 @@
             clearFormButton.Text = " Clean";
             clearFormButton.UseVisualStyleBackColor = true;
             // 
-            // timer
-            // 
-            timer.Tick += timer_Tick;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
