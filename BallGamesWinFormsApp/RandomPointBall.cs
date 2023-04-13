@@ -8,18 +8,13 @@ using System.Windows.Forms;
 namespace BallGamesWinFormsApp
 {
     
-    public class RandomPointBall
+    public class RandomPointBall:Ball
     {
         static Random random = new Random();
-        public RandomPointBall(MainForm form)
+        public RandomPointBall(MainForm form):base(form)
         {
-            var graphics = form.CreateGraphics();
-            var brush = Brushes.Aqua;
             var x = random.Next(0, form.ClientSize.Width);
-            var y = random.Next(0, form.ClientSize.Height);
-            var rectangle = new Rectangle(x, y, 100, 100);
-            graphics.FillEllipse(brush, rectangle);
+            var y = random.Next(0, form.ClientSize.Height); 
         }
-        
     }
 }

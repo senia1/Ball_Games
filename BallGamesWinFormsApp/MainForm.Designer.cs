@@ -75,6 +75,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Balls";
             Load += MainForm_Load;
+            MouseDown += MainForm_MouseDown;
             ResumeLayout(false);
         }
 
