@@ -13,3 +13,7 @@ There is a Stop button that stops all created balloons. After stopping the balls
 Project #2 "CatchBallsGame" implemented game logic:
 
 By pressing the Start button, the movement of the balls starts, the user must catch the balls with the mouse, if the ball is caught, it stops. Balls caught are counted. At the end of the game, you need to use the Clear the field button.
+
+Project #3 "SalutWinFormsApp" implemented game logic:
+  -By pressing the start button, a single salute is launched - a ball flies out and breaks up into several balls.
+  -By clicking the mouse anywhere on the form, a salute is launched.
