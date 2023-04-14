@@ -6,6 +6,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>party_celebration_confetti_emoticon_emoji_icon_209641.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="party_celebration_confetti_emoticon_emoji_icon_209641.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Balls.Common\Balls.Common.csproj" />
+  </ItemGroup>
 
 </Project>
