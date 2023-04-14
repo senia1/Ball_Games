@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            startButton = new Button();
+            SuspendLayout();
+            // 
+            // startButton
+            // 
+            startButton.Location = new Point(660, 29);
+            startButton.Name = "startButton";
+            startButton.Size = new Size(112, 34);
+            startButton.TabIndex = 0;
+            startButton.Text = "Start";
+            startButton.UseVisualStyleBackColor = true;
+            startButton.Click += startButton_Click_1;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(startButton);
+            Name = "MainForm";
+            Text = "Salut";
+            MouseDown += MainForm_MouseDown_1;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button startButton;
     }
 }
