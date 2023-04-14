@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             startButton = new Button();
             SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(startButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Salut";
             MouseDown += MainForm_MouseDown_1;
