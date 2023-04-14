@@ -17,6 +17,15 @@ namespace SalutWinFormsApp
             startSalutball.Start();
         }
 
+        private void Ball_TopReached(object? sender, HitEventArgs e)
+        {
+            for (int i = 0; i < random.Next(4, 10); i++)
+            {
+                var ball = new SalutBall(this, e.X, e.Y);
+                ball.Start();
+            }
+        }
+
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
             for (int i = 0; i < random.Next(4, 10); i++)
